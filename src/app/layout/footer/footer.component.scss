@@ -1,0 +1,46 @@
+.footer {
+  background-color: #021c1e;
+  color: #dcdcdc;
+  padding: 60px 0;
+  font-family: Arial, sans-serif;
+
+  h5 {
+    color: white;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 5px 0;
+    cursor: pointer;
+  }
+
+  small {
+    color: #9aa5a6;
+  }
+
+  hr {
+    border-color: #2e3b3d;
+    margin: 40px 0;
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+
+  span {
+    width: 40px;
+    height: 40px;
+    background: #0b2a2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  i {
+    color: white;
+  }
+}
