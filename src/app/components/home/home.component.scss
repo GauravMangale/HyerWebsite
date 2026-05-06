@@ -1,76 +1,116 @@
- 
-.home {
-  background-image: url('/assets/img/airoplanhome.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
- 
-.logo {
-  font-size: clamp(3rem, 12vw, 18rem);
-  font-weight: 900;
-  color: #000;
-}
- 
-.main-heading {
-  font-size: clamp(1.8rem, 5vw, 4rem);
-  color: #000;
-}
- 
-.bottom-text {
-  font-size: clamp(1.2rem, 3vw, 2rem);
-}
- 
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-}
- 
-@media (min-width: 576px) {
-  .w-sm-auto {
-    width: auto !important;
-  }
-}
+ .home {
+   background-image: url('/assets/img/airoplanhome.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+
+ .logo {
+   font-size: clamp(3rem, 17vw, 18rem);
+   font-weight: 700;
+   color: #000;
+ }
+
+ .main-heading {
+   font-size: clamp(1.8rem, 5vw, 4rem);
+   color: #000;
+ }
+
+ .bottom-text {
+   font-size: clamp(1.2rem, 3vw, 2rem);
+ }
+
+ .nav-links a {
+   text-decoration: none;
+   color: #000;
+   font-weight: 500;
+ }
+
+ @media (min-width: 576px) {
+   .w-sm-auto {
+     width: auto !important;
+   }
+ }
 
 
-.nav-links a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-}
+ .nav-links a {
+   margin: 0 15px;
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+ }
 
-.row {
-    --bs-gutter-x: 0rem !important;
-}
+ .row {
+   --bs-gutter-x: 0rem !important;
+ }
 
 
-.icon-box {
-    width: 90px;
-    height: 90px;
-    border: 2px dashed #5b5b5b;
-    border-bottom-right-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 26px;
-    color: #000000;
-}
+ .icon-box {
+   width: 90px;
+   height: 90px;
+   border: 2px dashed #5b5b5b;
+   border-bottom-right-radius: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 26px;
+   color: #000000;
+ }
 
-p {
-    font-size: 20px;
-}
+ p {
+   font-size: 20px;
+ }
 
-/* Default (mobile & small screens) */
-.responsive-img {
-    height: auto;
-}
+ /* Default (mobile & small screens) */
+ .responsive-img {
+   height: auto;
+ }
 
-/* Large screens and above */
-@media (min-width: 992px) {
-    .responsive-img {
-        height: 100vh;
-        object-fit: cover;
-    }
-}
+ /* Large screens and above */
+ @media (min-width: 992px) {
+   .responsive-img {
+     height: 100vh;
+     object-fit: cover;
+   }
+ }
+
+ @media (min-width: 768px) {
+   .homenavbar {
+     display: none;
+   }
+
+ }
+
+ .bootstrapnavbar {
+   display: none;
+ }
+
+
+ img {
+   transition: opacity 0.4s ease;
+ }
+
+
+
+
+
+
+
+ .card-box {
+   position: relative;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+
+ /* Hide paragraph initially */
+ .card-box p {
+   opacity: 0;
+   transform: translateY(10px);
+   transition: all 0.3s ease;
+ }
+
+ /* Show on hover */
+ .card-box:hover p {
+   opacity: 1;
+   transform: translateY(0);
+ }

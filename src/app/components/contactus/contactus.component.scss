@@ -81,3 +81,34 @@
   background: transparent;
 }
 
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  border-bottom-right-radius: 180px;
+}
+
+
+.text-content {
+  position: absolute;
+  bottom: 150px;
+  right: 46px;
+  color: white;
+  z-index: 2;
+}
+
+// @media (min-width: 992px) {
+//   .text-content {
+//     padding-left: 2rem;
+//   }
+// }
+
+@media (max-width: 576px) {
+    .text-content { 
+        max-width: 100%;
+    }
+
+ 
+}

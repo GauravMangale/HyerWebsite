@@ -9,5 +9,7 @@ import { FooterComponent } from "../../layout/footer/footer.component";
   styleUrl: './solution.component.scss'
 })
 export class SolutionComponent {
-
+ngOnInit() {
+  console.log('Component Loaded');
+}
 }

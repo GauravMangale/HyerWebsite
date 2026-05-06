@@ -21,3 +21,21 @@
 p {
     font-size: 20px;
 }
+
+
+
+.text-content {
+  position: absolute;
+  bottom: 150px;
+  right: 46px;
+  color: white;
+  z-index: 2;
+}
+ 
+@media (max-width: 576px) {
+    .text-content { 
+        max-width: 100%;
+    }
+
+ 
+}

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../../layout/navbar/navbar.component';
 import { FooterComponent } from '../../layout/footer/footer.component';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-aboutus',
@@ -10,10 +11,22 @@ import { FooterComponent } from '../../layout/footer/footer.component';
 })
 export class AboutusComponent {
 
+  ngOnInit() {
+    console.log('Component Loaded');
+  }
 
   scrollToSection() {
-  document.getElementById("behindSection")?.scrollIntoView({
-    behavior: "smooth"
-  });
-}
+    document.getElementById("behindSection")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+
+    ngAfterViewInit() {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 120
+      });
+    }
 }
